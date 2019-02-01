@@ -1,4 +1,4 @@
-# TypeScript in Browser
+# TypeScript in the Browser
 
 This repository is an experiment in running TypeScript in the browser.
 
