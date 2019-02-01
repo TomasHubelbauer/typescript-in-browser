@@ -14,3 +14,5 @@ This demo transpiles TypeScript source text to JavaScript source text based on t
 ```js
 const { outputText, diagnostics, sourceMapText } = ts.transpileModule('const x: number = 5;', { compilerOptions: { target: 'esnext' } });
 ```
+
+- [ ] Integrate a web worker which intercepts requests and serves transpiled sources
