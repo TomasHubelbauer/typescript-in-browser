@@ -16,3 +16,6 @@ const { outputText, diagnostics, sourceMapText } = ts.transpileModule('const x: 
 ```
 
 - [ ] Integrate a web worker which intercepts requests and serves transpiled sources
+  - There should be a tool repo which has the web worker logic and a demo repo which is TypeScript running in GitHub Pages
+  - This repo should stay as a PoC repo
+- [ ] Integrate Monaco Editor for TypeScript editor and JavaScript viewer
