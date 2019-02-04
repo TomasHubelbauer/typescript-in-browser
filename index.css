@@ -1,9 +1,18 @@
+html {
+    height: 100%;
+}
+
 body {
     display: flex;
     flex-direction: column;
     font-family: sans-serif;
+    height: 100%;
 }
 
-textarea {
+#inputMonacoEditor {
+    flex: 1;
+}
+
+#outputMonacoEditor {
     flex: 1;
 }

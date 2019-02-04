@@ -4,18 +4,22 @@
     <meta charset="utf8" />
     <title>TypeScript to JavaScript in the browser</title>
     <script src="https://unpkg.com/typescript@3.3.1/lib/typescript.js"></script>
+    <!-- https://github.com/Microsoft/monaco-editor-samples/blob/master/browser-script-editor/index.html -->
+    <!-- TODO: Make JSX/TSX work: https://github.com/Microsoft/monaco-editor/issues/264 -->
+    <script>var require = { paths: { 'vs': 'https://unpkg.com/monaco-editor@0.15.6/min/vs' } };</script>
     <script src="https://unpkg.com/monaco-editor@0.15.6/min/vs/loader.js"></script>
     <script src="https://unpkg.com/monaco-editor@0.15.6/min/vs/editor/editor.main.nls.js"></script>
     <script src="https://unpkg.com/monaco-editor@0.15.6/min/vs/editor/editor.main.js"></script>
     <script src="index.js"></script>
     <link href="index.css" rel="stylesheet" />
+    <link data-name="vs/editor/editor.main" href="https://unpkg.com/monaco-editor@0.15.6/min/vs/editor/editor.main.css" rel="stylesheet" />
   </head>
   <body>
     <h1>TypeScript to JavaScript in the browser</h1>
-    <textarea id="inputTextArea"></textarea>
     <!-- TODO: Add controls for compiler options -->
     <p>Compiler options are set to targetting ESNext.</p>
-    <textarea id="outputTextArea" readonly></textarea>
     <p id="timeP"></p>
+    <div id="inputMonacoEditor"></div>
+    <div id="outputMonacoEditor"></div>
   </body>
 </html>

@@ -1,11 +1,11 @@
 window.addEventListener('load', _ => {
-  const inputTextArea = document.querySelector('#inputTextArea');
-  const outputTextArea = document.querySelector('#outputTextArea');
+  const inputEditor = monaco.editor.create(document.querySelector('#inputMonacoEditor'), { value: '', language: 'typescript' });
+  const outputEditor = monaco.editor.create(document.querySelector('#outputMonacoEditor'), { value: '', language: 'javascript', readOnly: true });
   const timeP = document.querySelector('#timeP');
 
-  inputTextArea.addEventListener('input', event => {
+  inputEditor.onDidChangeModelContent(_event => {
     const t = performance.now();
-    outputTextArea.value = ts.transpileModule(event.currentTarget.value, { compilerOptions: { target: 'esnext' } }).outputText
+    outputEditor.setValue(ts.transpileModule(inputEditor.getValue(), { compilerOptions: { target: 'esnext' } }).outputText);
     timeP.textContent = `The transpilation took ${performance.now() - t} ms.`;
   });
 });
