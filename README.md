@@ -65,7 +65,7 @@ Watch out because:
 
 ## Contributing
 
-- [ ] Split the on-the-fly logic into its own repository/demo
-- [ ] Pull the on-the-fly transpiler out to its own library for use by other people
-- [ ] Host a GitHub Pages demo of a TypeScript application running with the help of the service worker
+- [ ] Move the libray and the demo code to their own respective repositories:
+  - https://github.com/TomasHubelbauer/ts-script-tag
+  - https://github.com/TomasHubelbauer/ts-script-tag-demo
 - [ ] Make TSX work in the Monaco editor
