@@ -1,28 +1,8 @@
 # TypeScript in the Browser
 
-This repository is an experiment in running TypeScript in the browser.
-
-It has two facets described below.
+This repository is an experiment in transpiling TypeScript in the browser.
 
 [**DEMO**](https://tomashubelbauer.github.io/typescript-in-browser/)
-
-### Web Worker for On-The-Fly Transpilation
-
-The page contains a script tag such as this:
-
-```html
-<script src="demo/index.ts"></script>
-```
-
-A web worker is registered and it intercepts all requests ending in `.ts`.
-It invokes the TypeScript compiler and transpiles the responses on the fly.
-The resulting JavaScript is passed to the browser and executed by it.
-
-### In-Page User-Defined Code Transpilation
-
-The page allows you to enter TypeScript and see the corresponding JavaScript.
-
-How does it work?
 
 1. Refer to `typescript.js` (`typescript/lib/`) in some way (CDN, `node_modules`)
 2. Find the `TypeScript` and `ts` objects on `window`
@@ -65,7 +45,5 @@ Watch out because:
 
 ## Contributing
 
-- [ ] Move the libray and the demo code to their own respective repositories:
-  - https://github.com/TomasHubelbauer/ts-script-tag
-  - https://github.com/TomasHubelbauer/ts-script-tag-demo
+- [ ] Move the service worker info to the library repository
 - [ ] Make TSX work in the Monaco editor
