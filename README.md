@@ -47,3 +47,4 @@ Watch out because:
 
 - [ ] Move the service worker info to the library repository
 - [ ] Make TSX work in the Monaco editor
+- [ ] Add TS compiler options controls
