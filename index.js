@@ -5,7 +5,7 @@ window.addEventListener('load', async _ => {
 
   inputEditor.onDidChangeModelContent(_event => {
     const t = performance.now();
-    outputEditor.setValue(ts.transpileModule(inputEditor.getValue(), { compilerOptions: { target: 'esnext' } }).outputText);
+    outputEditor.setValue(ts.transpileModule(inputEditor.getValue(), { compilerOptions: { target: 'esnext', jsx: 'react' } }).outputText);
     timeP.textContent = `The transpilation took ${Math.round(performance.now() - t)} ms.`;
   });
 });
