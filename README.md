@@ -24,7 +24,6 @@ Locally, run `index.html`
 
 ## Contributing
 
-- [ ] Move the service worker info to the library repository
 - [ ] Make TSX work in the Monaco editor
 - [ ] Add TS compiler options controls: types, target etc.
   - [ ] Investigate how loading typings could work
