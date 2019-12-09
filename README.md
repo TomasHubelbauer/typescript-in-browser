@@ -22,8 +22,10 @@ Remotely, [**see the online demo**](https://tomashubelbauer.github.io/typescript
 
 Locally, run `index.html`
 
-## Contributing
+## To-Do
 
-- [ ] Make TSX work in the Monaco editor
-- [ ] Add TS compiler options controls: types, target etc.
-  - [ ] Investigate how loading typings could work
+### Make TSX work in the Monaco editor
+
+### Add TS compiler options controls: types, target etc.
+
+Investigate how loading typings could work
