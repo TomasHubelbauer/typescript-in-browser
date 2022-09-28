@@ -1,5 +1,9 @@
 # TypeScript in the Browser
 
+> Note: The ability to both transpile and execute TypeScript code in the browser
+> has since been added to the TypeScript Playground:
+> https://www.typescriptlang.org/play
+
 This repository is an experiment in transpiling TypeScript in the browser.
 
 [**DEMO**](https://tomashubelbauer.github.io/typescript-in-browser)
